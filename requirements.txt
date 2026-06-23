@@ -1,0 +1,15 @@
+# Credit Default Risk + XAI — dependencies
+#
+# pipeline / notebook:  python "XAI case.py"   (or run XAI case.ipynb)
+# demo app:             streamlit run app.py
+
+pandas==3.0.3
+numpy==2.4.6
+scikit-learn==1.9.0
+scipy==1.18.0
+matplotlib==3.11.0
+joblib==1.5.3
+shap==0.52.0
+lime==0.2.0.1
+streamlit==1.58.0
+ipykernel==7.3.0

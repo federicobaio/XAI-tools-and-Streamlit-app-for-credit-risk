@@ -1,0 +1,46 @@
+{
+  "cv_roc_auc": {
+    "LogisticRegression": 0.745,
+    "RandomForest": 0.748,
+    "GradientBoosting": 0.749
+  },
+  "best_params": {
+    "learning_rate": 0.03,
+    "max_depth": 3,
+    "n_estimators": 200
+  },
+  "test_roc_auc": 0.766,
+  "optimal_threshold": 0.28,
+  "riskiest_applicant_id": 973,
+  "riskiest_applicant_risk": 0.88,
+  "fairness": {
+    "base_default_rate_by_sex": {
+      "female": 0.352,
+      "male": 0.277
+    },
+    "approval_rate_by_sex": {
+      "female": 0.531,
+      "male": 0.669
+    },
+    "disparate_impact_ratio": 0.79,
+    "equal_opportunity_gap": 0.15,
+    "sex_shap_share": 0.019,
+    "mitigation": {
+      "with Sex+Age (baseline)": {
+        "di": 0.79,
+        "eo_gap": 0.15,
+        "auc": 0.766
+      },
+      "without Sex": {
+        "di": 0.85,
+        "eo_gap": 0.13,
+        "auc": 0.768
+      },
+      "without Sex+Age": {
+        "di": 0.95,
+        "eo_gap": 0.05,
+        "auc": 0.771
+      }
+    }
+  }
+}

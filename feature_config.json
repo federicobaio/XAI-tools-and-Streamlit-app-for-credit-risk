@@ -1,0 +1,12 @@
+{
+  "credit_amount_q75": 3979.5,
+  "operating_threshold": 0.28,
+  "duration_long_term_months": 24,
+  "missing_account_token": "missing",
+  "job_desc_map": {
+    "0": "unskilled_non_resident",
+    "1": "unskilled_resident",
+    "2": "skilled",
+    "3": "highly_skilled"
+  }
+}
