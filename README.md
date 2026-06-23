@@ -73,10 +73,9 @@ The app opens on `http://localhost:8501`.
 ## Repository layout
 
 ```
-XAI case.py            pipeline + analysis (the main script)
-XAI case.ipynb         the same, as a narrated notebook
+XAI_case.py            pipeline + analysis (the main script)
+XAI_case.ipynb         the same, as a narrated notebook
 app.py                 Streamlit demo app
-build_notebook.py      generates the notebook from the script
 query_credit_risk.sql  feature engineering on BigQuery (data origin)
 credit_features.csv    model input (exported from the SQL view)
 credit_model.pkl       trained model
@@ -84,6 +83,7 @@ model_columns.pkl      training column layout (the serving contract)
 feature_config.json    training constants the app needs to rebuild features
 metrics.json           headline metrics + fairness numbers
 figures/               saved plots (EDA, ROC/PR, SHAP, LIME, fairness)
+lime_explanation.htlm  html output of LIME
 requirements.txt       dependencies
 ```
 
